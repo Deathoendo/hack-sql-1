@@ -1,0 +1,46 @@
+INSERT INTO roles (id_role,NAME) VALUES 
+(1, 'Administrador'),
+(2, 'Cliente'),
+(3, 'Vendedor')
+
+- table taxes
+INSERT INTO taxes (id_tax,percentage) VALUES 
+(1, 20),
+(2, 11),
+(3, 4)
+
+- table offers
+INSERT INTO offers (id_offer, status) VALUES 
+(1, 'liquidacion'),
+(2, 'descuento'),
+(3, 'rebaja')
+
+- table discounts
+INSERT INTO discounts (id_discount, status, percentage) VALUES 
+(1, 'descuento 80%', 80),
+(2, 'descuento 30%', 30),
+(3, 'descuento 15%', 15)
+
+- table payments
+INSERT INTO payments (id_payment, type) VALUES 
+(1, 'credito'),
+(2, 'debito'),
+(3, 'efectivo')
+
+- table customers
+INSERT INTO customers (id_customer, email, id_country, id_role, name, age, password, physical_address) VALUES 
+(1, 'bryan.gamez@gmail.com', 9, 3, 'bryan', 27, '12345678', 'Caracas'),
+(2, 'perri_007@hotmail.com', 9, 3, 'perri', 40, '25252525', 'Valencia'),
+(3, 'cesar.gamez@gmail.com', 9, 3, 'cesar', 30, '3633728', 'caracas')
+
+- table invoice_status
+INSERT INTO invoice_status (id_invoice_status, status) VALUES 
+(1, 'PENDIENTE'),
+(2, 'PAGADO'),
+(3, 'CANCELADO')
+
+- table products
+INSERT INTO products (id_product, id_discount, id_offer, id_tax, name, details, minimum_stock, maximun_stock, current_stock, price, price_with_tax) VALUES 
+(1, 1, 2, 2, 'Zapatos', 'addidas', 5, 30, 20, 200.5, 220.10),
+(2, 1, 2, 2, 'Camisa', 'puma', 5, 30, 20, 19.5, 22.10),
+(3, 1, 2, 2, 'Pantalon', 'Levis', 5, 30, 20, 50.5, 55.10)

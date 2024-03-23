@@ -1,0 +1,13 @@
+insert into countries (name) values ('Peru') , ('bolivia'),('uruguay'),('paraguay'),('panama');
+select * from priorities;
+
+insert into priorities (type_name) values ('foo') , ('barziman'),('bar');
+
+insert into contact_request (id_country, id_priority, name, detail, phisycal_address) 
+  values (2, 1, 'fooziman', 'vendor', 'calle prueba'), (1, 2, 'bar', 'client', 'calle prueba'), (4, 3, 'barziman', 'client', 'calle prueba'); 
+select * from contact_request;
+
+delete from users where id_users = 1;
+select * from users;
+
+update users set email = 'foo@foo.foo', name = 'fooz' where id_users = 3;
